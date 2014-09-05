@@ -2,7 +2,7 @@
 
 int main(void){
 	int n1, n2, nRs;
-	float f1, f2, fRs, fVal,fVal2;
+	float f1, f2, fRs;
 	//printf("Hello World, I am in CptS 121! \n");
 	printf("Type Integer Numbers 1 and 2 respectively\n");
 	scanf_s("%d",&n1);
@@ -16,16 +16,16 @@ int main(void){
 	nRs = n1 * f1;
 	printf("The result of %d x %.2f is: %d \n",n1,f1,nRs);
 	nRs = n1 / n2;
-	fVal = n1;
-	fVal2 = n2;
-	fRs = fVal / fVal2;
+	//fVal = n1;
+	//fVal2 = n2;
+	fRs = ((float) n1 / n2);
 	printf("The result of %d / %d as integer is: %d, and the result as float is: %f \n",n1,n2,nRs, fRs);
 	nRs = n1 / f2;
 	fRs = n1 / f2;
 	printf("The result of %d / %.2f as integer is: %d, and the result as float is: %f \n",n1,f2,nRs, fRs);
-	fVal = n1;
-	fRs = fVal / n2;	
-	printf("The result of %.2f cast as a float divided by %d as float is: %f \n",fVal,n2,fRs);
+	//fVal = n1;
+	fRs = ((float) n1 / n2);	
+	printf("The result of %d casted as a float divided by %d as float is: %f \n",n1,n2,fRs);
 	nRs = n1 % n2;
 	printf("The result of %d % (mod) %d is: %d \n",n1,n2,nRs);
 	if(n1 % 2 == 0 && n2 % 2 == 0){
