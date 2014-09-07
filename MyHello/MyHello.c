@@ -1,19 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 
 #define PI 3.14159265
-double listF[10];
-void initVars(int listI[]){
-	int x = 0;
-	//int sizeF = sizeof();
-	//int sizeI = sizeof(listI);
-	for (x = 0; x < sizeof(listF); x++){
-		listF[x] = 0;
-	}
-	for (x = 0; x < sizeof(listI); x++){
-		listI[x] = 0;
-	}
-}
 
 int main(void){
 	
@@ -28,12 +17,6 @@ int main(void){
 	int x,y,a,b,c,d;
 	//Var exercise E
 	double circum, radius;
-	//Initializing vars
-	//int listI[10];
-	//listI[n1,n2,nRs,v,r,i,p,x,y,a,b,c,d];
-	//listF[f1,f2,fRs,circum,radius];
-//	initVars(listI);
-	//Var initialized
 
 	printf("**********************************Exercise A ************************************* \n\n\n");
 	printf("Type Integer Numbers 1 and 2 respectively\n");
@@ -87,7 +70,7 @@ int main(void){
 	scanf_s("%d",&c);
 	scanf_s("%d",&d);
 	scanf_s("%d",&x);
-	y = 3 * (a*(pow((double)x,3)) + ((double) 1/4) * b*x^2 + 10 * c*x + (-5) * d);
+	y = 0;//3 * (a*(pow((double)x,3)) + ((double) 1/4) * b*x^2 + 10 * c*x + (-5) * d);
 	printf("The polynominal value of this equation (Y) is %d",y);
 
 	
